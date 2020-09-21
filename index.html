@@ -4,34 +4,38 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Currículum Vitae</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
-    <body class="elegant-color">
+    <header>
         <div class="container-fluid" id="menu">
-            <nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark text-light">
+            <nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark fixed-top text-light mb-4">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#home" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="home">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#home">Home</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sectionDados">Dados</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#experiencia">Experiência</a>
+                            <a class="nav-link" href="#sectionExperiencia">Experiência</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#escolaridade">Escolaridade</a>
+                            <a class="nav-link" href="#sectionEscolaridade">Escolaridade</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                            <a class="nav-link" href="#sectionHabilidades">Habilidades</a>
                         </li>
                     </ul>
                 </div>
               </nav>
         </div>
+    </header>
+    <body class="elegant-color mt-4">
+        <span class="anchor" id="sectionDados"></span>
         <div class="container" id="dados">
             <div class="row justify-content-center">
                 <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
@@ -40,10 +44,10 @@
                             <h2 class="text-center">Douglas de Abreu Martins Oliveira</h2>
                         </div>
                         <div class="card-body">
-                            <img class="rounded-circle mx-auto d-block" src="img/perfil.jpg" alt="perfil" style="width: 25%;">
+                            <img class="rounded-circle mx-auto d-block" src="img/perfil.jpg" alt="perfil">
                             <div class="text-center mt-4">
-                                <a class="btn elegant-color rounded-pill text-light" href="https://github.com/douglas-abreu"><i class="fab fa-github" style="font-size: 30px;"></i></a>
-                                <a class="btn elegant-color rounded-pill text-light" href="https://www.linkedin.com/in/douglas-oliveira-92a9831b5/"><i class="fab fa-linkedin" style="font-size: 30px;"></i></a>
+                                <a class="btn elegant-color rounded-pill text-light" href="https://github.com/douglas-abreu"><i class="fab fa-github icone-redes"></i></a>
+                                <a class="btn elegant-color rounded-pill text-light" href="https://www.linkedin.com/in/douglas-oliveira-92a9831b5/"><i class="fab fa-linkedin icone-redes"></i></a>
                             </div>
                         </div>
                         <div class="list-group-flush col-lg-6 col-md-6 col-sm-12 bg-dark text-center mx-auto d-block ">
@@ -69,6 +73,7 @@
             </div>
         </div>
         <div class="container" id="experiencia">
+            <span class="anchor" id="sectionExperiencia"></span>
             <div class="row justify-content-center">
                 <div class="col-12 mt-4">
                     <div class="card elegant-color-dark text-light">
@@ -84,10 +89,10 @@
                                         </div>
                                         <div class="card-body">
                                             <div class="list-group-flush">
-                                                <li class="list-group-item elegant-color"><i class="fas fa-angle-right" style="font-size: 20px;"></i> Atendimento e orientação ao cliente via telefônica ou eletrônica;</li>
-                                                <li class="list-group-item elegant-color"><i class="fas fa-angle-right" style="font-size: 20px;"></i> Criação de documentação técnica dos procedimentos executados;</li>
-                                                <li class="list-group-item elegant-color"><i class="fas fa-angle-right" style="font-size: 20px;"></i> Realização de atividades de monitoramento de serviços; e</li>
-                                                <li class="list-group-item elegant-color"><i class="fas fa-angle-right" style="font-size: 20px;"></i> Análise de rádio (Canopy, ePMP, Intelbras e Alvarion), switch (Huawei, HP e Intelbras) e roteador (Huawei e Mikrotik).</li>  
+                                                <li class="list-group-item elegant-color"><i class="fas fa-angle-right"></i> Atendimento e orientação ao cliente via telefônica ou eletrônica;</li>
+                                                <li class="list-group-item elegant-color"><i class="fas fa-angle-right"></i> Criação de documentação técnica dos procedimentos executados;</li>
+                                                <li class="list-group-item elegant-color"><i class="fas fa-angle-right"></i> Realização de atividades de monitoramento de serviços; e</li>
+                                                <li class="list-group-item elegant-color"><i class="fas fa-angle-right"></i> Análise de rádio (Canopy, ePMP, Intelbras e Alvarion), switch (Huawei, HP e Intelbras) e roteador (Huawei e Mikrotik).</li>  
                                             </div>
                                         </div>
                                         <div class="card-footer">
@@ -102,6 +107,7 @@
             </div>
         </div>
         <div class="container" id="escolaridade">
+            <span class="anchor" id="sectionEscolaridade"></span>
             <div class="row justify-content-center">
                 <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
                     <div class="card elegant-color-dark text-light">
@@ -150,6 +156,7 @@
             </div>
         </div>
         <div class="container" id="habilidades">
+            <span class="anchor" id="sectionHabilidades"></span>
             <div class="row justify-content-center">
                 <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
                     <div class="card elegant-color-dark text-light">
