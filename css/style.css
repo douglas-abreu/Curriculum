@@ -1,5 +1,5 @@
 header{
-    margin-bottom: 3%;
+    margin-bottom: 4%;
 }
 
 img{
@@ -17,4 +17,10 @@ i{
 .anchor{
     position: absolute;
     transform: translateY(-30vh);
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        margin-bottom: 12%;
+    }
 }
