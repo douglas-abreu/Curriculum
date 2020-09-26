@@ -10,6 +10,10 @@ i{
     font-size: 15px;
 }
 
+.skill-icon{
+    font-size: 20px;
+}
+
 .icone-redes{
     font-size: 30px;
 }
@@ -32,4 +36,9 @@ i{
 
 html {
     scroll-behavior: smooth;
+}
+
+.flags{
+    width: 25px;
+    margin-right: 10px;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,16 +19,32 @@
                 <div class="collapse navbar-collapse" id="home">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#sectionDados">Dados</span></a>
+                            <a class="nav-link" href="#sectionDados" data-langkey="DataButton">Dados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#sectionExperiencia">Experiência</a>
+                            <a class="nav-link" href="#sectionExperiencia" data-langkey="ExpButton">Experiência</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#sectionEscolaridade">Escolaridade</a>
+                            <a class="nav-link" href="#sectionEscolaridade" data-langkey="EduButton">Escolaridade</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#sectionHabilidades">Habilidades</a>
+                            <a class="nav-link" href="#sectionHabilidades" data-langkey="SkillsButton">Habilidades</a>
+                        </li>
+                        <div class="nav-item dropdown">
+                            <a href="#" data-langkey="LanguageButton" class="nav-link dropdown-toggle" id="dropLinguas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Línguas
+                            </a>
+                            <div id="languages" class="dropdown-menu elegant-color-dark " aria-labelledby="dropLinguas">
+                                <a class="text-light dropdown-item language" href="#" data-lang="port">
+                                    <img class="flags" src="img/flag-brazil.png" alt="portugues">
+                                    Português
+                                </a>
+                                <a class="text-light dropdown-item language" href="#" data-lang="ing" >
+                                    <img class="flags" src="img/flag-usa.png" alt="ingles">
+                                    English
+                                </a>
+
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -45,16 +61,16 @@
                             <h2 class="text-center">Douglas de Abreu Martins Oliveira</h2>
                         </div>
                         <div class="card-body">
-                            <img class="rounded-circle mx-auto d-block" src="img/perfil.jpg" alt="perfil">
+                            <img class="rounded-circle mx-auto d-block" src="img/perfil.jpg" alt="foto perfil">
                             <div class="text-center mt-4">
                                 <a class="btn elegant-color rounded-pill text-light" href="https://github.com/douglas-abreu"><i class="fab fa-github icone-redes"></i></a>
                                 <a class="btn elegant-color rounded-pill text-light" href="https://www.linkedin.com/in/douglas-oliveira-92a9831b5/"><i class="fab fa-linkedin icone-redes"></i></a>
                             </div>
                         </div>
                         <div class="list-group-flush col-lg-6 col-md-6 col-sm-12 bg-dark text-center mx-auto d-block ">
-                            <li class="list-group-item bg-dark">Idade: 24 anos</li>
-                            <li class="list-group-item bg-dark">Cidade: Parnamirim</li>
-                            <li class="list-group-item bg-dark">Telefone: (84) 99950-1886</li>
+                            <li class="list-group-item bg-dark" data-langkey="Age">Idade: 24 anos</li>
+                            <li class="list-group-item bg-dark" data-langkey="City">Cidade: Parnamirim/RN</li>
+                            <li class="list-group-item bg-dark" data-langkey="Phone">Telefone: (84) 99950-1886</li>
                             <li class="list-group-item bg-dark">E-mail: douglas.abreu.martins@gmail.com</li>  
                         </div>
                     </div>
@@ -64,10 +80,10 @@
                 <div class="col-12 mt-4">
                     <div class="card elegant-color-dark text-light">
                         <div class="card-header">
-                            <h2 class="text-center">Apresentação</h2>
+                            <h2 class="text-center" data-langkey="Introduction-title">Apresentação</h2>
                         </div>
                         <div class="card-body text-center">
-                            <p>Estudante dedicado, entusiasta em desenvolvimento Front-End. Busco aprimorar meus conhecimentos através de práticas em desenvolvimentos de páginas Web.</p>
+                            <p><span data-langkey="Introduction">Estudante dedicado, entusiasta em desenvolvimento Front-End. Busco aprimorar meus conhecimentos através de práticas em desenvolvimentos de páginas Web.</span></p>
                         </div>
                     </div>
                 </div>
@@ -79,25 +95,25 @@
                 <div class="col-12 mt-4">
                     <div class="card elegant-color-dark text-light">
                         <div class="card-header">
-                            <h2 class="text-center">Experiência</h2>
+                            <h2 class="text-center" data-langkey="Experience-title">Experiência</h2>
                         </div>
                         <div class="card-body">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8 col-sm-12">
                                     <div class="card elegant-color text-light mx-auto">
                                         <div class="card-header text-center">
-                                            <h4>Suporte Técnico - Interjato
+                                            <h4 data-langkey="Experience-card-title">Suporte Técnico - Interjato</h4>
                                         </div>
                                         <div class="card-body">
                                             <div class="list-group-flush">
-                                                <li class="list-group-item elegant-color"><i class="fas fa-check"></i> Atendimento e orientação ao cliente via telefônica ou eletrônica;</li>
-                                                <li class="list-group-item elegant-color"><i class="fas fa-check"></i> Criação de documentação técnica dos procedimentos executados;</li>
-                                                <li class="list-group-item elegant-color"><i class="fas fa-check"></i> Realização de atividades de monitoramento de serviços; e</li>
-                                                <li class="list-group-item elegant-color"><i class="fas fa-check"></i> Análise de rádio (Canopy, ePMP, Intelbras e Alvarion), switch (Huawei, HP e Intelbras) e roteador (Huawei e Mikrotik).</li>  
+                                                <li class="list-group-item elegant-color"><i class="fas fa-check"></i><span data-langkey="Task-Exp1"> Atendimento e orientação ao cliente via telefônica ou eletrônica;</span> </li>
+                                                <li class="list-group-item elegant-color"><i class="fas fa-check"></i><span data-langkey="Task-Exp2"> Criação de documentação técnica dos procedimentos executados;</span> </li>
+                                                <li class="list-group-item elegant-color"><i class="fas fa-check"></i><span data-langkey="Task-Exp3"> Realização de atividades de monitoramento de serviços; e</span></li>
+                                                <li class="list-group-item elegant-color"><i class="fas fa-check"></i><span data-langkey="Task-Exp4"> Análise de rádio (Canopy, ePMP, Intelbras e Alvarion), switch (Huawei, HP e Intelbras) e roteador (Huawei e Mikrotik).</span></li>  
                                             </div>
                                         </div>
                                         <div class="card-footer">
-                                            (Jul/2017 – Set/2018)
+                                            <span data-langkey="ExpDuration">(Jul/2017 – Set/2018)</span>
                                         </div>
                                     </div>
                                 </div>
@@ -113,41 +129,41 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
                     <div class="card elegant-color-dark text-light">
                         <div class="card-header">
-                            <h2 class="text-center">Escolaridade</h2>
+                            <h2 class="text-center" data-langkey="Education-title">Escolaridade</h2>
                         </div>
                         <div class="card-body">
                             <div class="row justify-content-center">
                                 <div class="card elegant-color text-light my-2 mx-3" style="width: 20rem;">
                                     <div class="card-header">
-                                        <h4>Tecnólogo em Sistemas para Internet</h4>
+                                        <h4 data-langkey="Education-title-1">Tecnólogo em Sistemas para Internet</h4>
                                     </div>
                                     <div class="card-body">
-                                        Instituto Federal do Rio Grande do Norte(IFRN) - Campus Parnamirim
+                                        <span data-langkey="Education-institute1">Instituto Federal do Rio Grande do Norte(IFRN) - Campus Parnamirim</span>
                                     </div>
                                     <div class="card-footer">
-                                        Cursando (2019-2022)
+                                        <span data-langkey="Course-status2">Cursando</span> (2019-2022)
                                     </div>
                                 </div>
                                 <div class="card elegant-color text-light my-2 mx-3" style="width: 20rem;">
                                     <div class="card-header">
-                                        <h4>Técnico em Informática para Internet </h4>
+                                        <h4 data-langkey="Education-title-2">Técnico em Informática para Internet </h4>
                                     </div>
                                     <div class="card-body">
-                                        Instituto Metrópole Digital(IMD) - UFRN
+                                        <span data-langkey="Education-institute2">Instituto Metrópole Digital(IMD) - UFRN</span>
                                     </div>
                                     <div class="card-footer">
-                                        Cursando (2019-2020)
+                                        <span data-langkey="Course-status2">Cursando</span> (2019-2020)
                                     </div>
                                 </div>
                                 <div class="card elegant-color text-light my-2 mx-3" style="width: 20rem;">
                                     <div class="card-header">
-                                        <h4>Técnico Laureado em Redes de Computadores</h4>
+                                        <h4 data-langkey="Education-title-3">Técnico Laureado em Redes de Computadores</h4>
                                     </div>
                                     <div class="card-body">
-                                        Instituto Federal do Rio Grande do Norte(IFRN) - Campus Parnamirim
+                                        <span data-langkey="Education-institute1">Instituto Federal do Rio Grande do Norte(IFRN) - Campus Parnamirim</span>
                                     </div>
                                     <div class="card-footer">
-                                        Concluído (2017-2018)
+                                        <span data-langkey="Course-status1">Concluído</span> (2017-2018)
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +178,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
                     <div class="card elegant-color-dark text-light">
                         <div class="card-header">
-                            <h2 class="text-center">Habilidades</h2>
+                            <h2 class="text-center" data-langkey="Skill-title">Habilidades</h2>
                         </div>
                         <div class="card-body">
                             <div class="row justify-content-center">
@@ -170,14 +186,14 @@
                                     <div class="card elegant-color text-light mx-auto my-2">
                                         <div class="card-body">
                                             <div class="list-group-flush">
-                                                <li class="list-group-item elegant-color"><i class="fab fa-html5" style="font-size: 20px;"></i> HTML5;</li>
-                                                <li class="list-group-item elegant-color"><i class="fab fa-css3-alt" style="font-size: 20px;"></i> CSS3;</li>
-                                                <li class="list-group-item elegant-color"><i class="fab fa-bootstrap" style="font-size: 20px;"></i> Bootstrap 4;</li>
-                                                <li class="list-group-item elegant-color"><i class="fab fa-js" style="font-size: 20px;"></i> JavaScript;</li>
-                                                <li class="list-group-item elegant-color"><i class="fab fa-js" style="font-size: 20px;"></i> JQuery;</li>
-                                                <li class="list-group-item elegant-color"><i class="fab fa-java" style="font-size: 20px;"></i> Java;</li>
-                                                <li class="list-group-item elegant-color"><i class="fas fa-database" style="font-size: 20px;"></i> MySQL; e</li>
-                                                <li class="list-group-item elegant-color"><i class="fas fa-language" style="font-size: 20px;"></i> Inglês avançado;</li>
+                                                <li class="list-group-item elegant-color"><i class="fab fa-html5 skill-icon"></i> HTML5;</li>
+                                                <li class="list-group-item elegant-color"><i class="fab fa-css3-alt skill-icon"></i> CSS3;</li>
+                                                <li class="list-group-item elegant-color"><i class="fab fa-bootstrap skill-icon"></i> Bootstrap 4;</li>
+                                                <li class="list-group-item elegant-color"><i class="fab fa-js skill-icon"></i> JavaScript;</li>
+                                                <li class="list-group-item elegant-color"><i class="fab fa-js skill-icon"></i> JQuery;</li>
+                                                <li class="list-group-item elegant-color"><i class="fab fa-java skill-icon"></i> Java;</li>
+                                                <li class="list-group-item elegant-color"><i class="fas fa-database skill-icon"></i> MySQL; e</li>
+                                                <li class="list-group-item elegant-color"><i class="fas fa-language skill-icon"></i> <span data-langkey="English-proficience">Inglês avançado.</span></li>
                                             </div>
                                         </div>
                                     </div>
@@ -189,7 +205,7 @@
             </div>
         </div>
         <footer class="text-light mt-2 text-center">
-            <p>&copy Desenvolvido e publicado por Douglas de Abreu Martins Oliveira</p>
+            <p>&copy<span data-langkey="Copyright">Desenvolvido e publicado por</span>  Douglas de Abreu Martins Oliveira</p>
         </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
