@@ -24,6 +24,10 @@ i{
 }
 
 @media screen and (max-width: 900px) {
+    img{
+        width: 35%;
+    }
+
     header{
         margin-bottom: 12%;
     }
